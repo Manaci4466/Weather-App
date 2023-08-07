@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Kanit:ital,wght@1,200&display=swap');
+
+* {
+    padding: 0;
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 9fr;
+    grid-template-areas: 'hd hd' 
+                        'inp dsp' ;
+    min-height: 100vh;
+  
+}
+
+
+header {
+    grid-area: hd;
+    width: 100%;
+    text-align: center;
+    font-size: 2rem;
+    font-family: 'Anton', sans-serif;
+    font-family: 'Kanit', sans-serif;
+    font-weight: 700;
+    background: #071013;
+    color: whitesmoke;
+}
+
+fieldset {
+    border: 0;
+}
+label {
+    display: block
+}
+
+input {
+
+
+    width: 100%
+
+}
+
+form {
+    padding: 25px; 
+    position: relative;
+    bottom: 50px;
+    width: 100%;
+}
+
+#inputSection {
+    display: flex;
+    padding: 50px;
+    justify-content: flex-end;;
+    align-items: center;
+    grid-area: inp;
+    width: 100%;
+    height: 100%;
+
+}
+
+#displaySection {
+
+    grid-area: dsp;
+    padding: 50px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+}
+
+
+#displaySection > div {
+
+    width: max(25vw,400px);
+    height: max(30vw,600px);
+    box-shadow: 3px 5px 5px 1px #000000;
+    border-radius: 5px;
+    padding: 10px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+h2 {
+    font-size: 1.5rem;
+
+}
+
+h3 {
+    font-size: 1.2rem;
+}
+
+#displaySection > div > div {
+
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+}
+
+
+#inputSection > div {
+    width: max(20vw,400px);
+    height: max(25vw,500px);
+    box-shadow: 3px 5px 5px 1px #000000;
+    background-color: #F58F29;
+    border-radius: 5px;
+
+}
+
+
+#inputSection > div > div:first-child {
+    height: 20px;
+    width: 100%;
+    background:#54DEFD;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+}
+
+
+
+#inputSection > div > div + div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    
+} 
